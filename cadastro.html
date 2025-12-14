@@ -18,31 +18,35 @@
     <header class="cabecalho">
         <a href="index.html"><img src="img2/Casa.png" alt="Pagina inicial" class=" cabecalho__imagem"></a>
         <a href="mensagens.html"><img src="img2/Mensagens.png" alt="Caixa de Mensagens" class="cabecalho__imagem"></a>  
-     </header>
+    </header>
      
-     <main class="conteudo">
-        <img src="img2/Logocadastro.png" alt="Logo da adopet">
-        <p class="conteudo__texto">Ainda não tem cadastro?</p>
-        <p class="conteudo__texto">Então,antes de buscar seu melhor amigo, precisamos de alguns dados.</p> 
+    <main >
+        <section class="conteudo">
+            <img src="img2/Logocadastro.png" alt="Logo da adopet">
+            <p class="conteudo__texto">Ainda não tem cadastro?</p>
+            <p class="conteudo__texto">Então,antes de buscar seu melhor amigo, precisamos de alguns dados.</p>
+        </section>
+
+        <form>
+            <section class="container-formulario">
+                <!-- <img class="visualizacao" src="img2/Vector.png" alt="Visualizador"> -->
+                <!-- <img class="visualizacao2" src="img2/Vector2.png" alt="Visualizador"> -->
+                <label for="email">Email</label>
+                <input type="text" id="email" required placeholder="Escolha seu melhor email">
+
+                <label for="nomesobrenome">Nome</label>
+                <input type="text" id="nomesobrenome" required placeholder="Digite seu nome completo">
+
+                <label for="senha">Senha</label>
+                <input type="text" id="senha" required placeholder="Crie uma senha">
+
+                <label for="confirma senha">Confirme sua senha</label>
+                <input type="text" id="confirma senha" required placeholder="Repita a senha criada acima">
+
+                <input type="submit" value="Cadastrar" class="cadastro">
+            </section>
+        </form>
     </main>
-
-    <form>
-        <img class="visualizacao" src="img2/Vector.png" alt="Visualizador">
-        <img class="visualizacao2" src="img2/Vector2.png" alt="Visualizador">
-        <label for="email">Email</label>
-        <input type="text" id="email" required placeholder="Escolha seu melhor email">
-
-        <label for="nomesobrenome">Nome</label>
-        <input type="text" id="nomesobrenome" required placeholder="Digite seu nome completo">
-
-        <label for="senha">Senha</label>
-        <input type="text" id="senha" required placeholder="Crie uma senha">
-
-        <label for="confirma senha">Confirma sua senha</label>
-        <input type="text" id="confirma senha" required placeholder="Repita a senha criada acima">
-
-        <input type="submit" value="Cadastrar" class="cadastro">
-    </form>
    
     <footer class="rodape">
         <p class="rodape__texto">2022 - Desenvolvido por Alura</p>

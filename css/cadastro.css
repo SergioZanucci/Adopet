@@ -84,12 +84,20 @@ body {
 }
 
 form {
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* position: absolute; */
+    /* width: 340px; */
+    /* left: 28px; */
+    /* top: 310px; */
+    padding: 15px 0px;
+}
+
+.container-formulario {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
-    position: absolute;
-    width: 340px;
-    left: 28px;
-    top: 310px;
+    align-content: center;
 }
 
 label {
@@ -99,6 +107,7 @@ label {
     color: var(--cinza);
     line-height: 24px;
     margin: 5px;
+    width: 340px;
 }
 
 input {
@@ -129,15 +138,14 @@ input::placeholder {
     padding: 3em;
 }
 
-@media screen and (min-width: 768px) {
-    form {
-        left: 13em;
+@media(max-width: 400px) {
+    label {
+        width: 285px;
     }
-}
+} 
 
-@media screen and (min-width: 1444px) {
-    form {
-        left: 35em;
-        top: 19em;
+/* @media(max-width: 1444px) {
+    label {
+        
     }
-}
+}  */

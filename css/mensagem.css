@@ -37,6 +37,11 @@ body {
     padding: 3em;   
 }
 
+.cabecalho__navigation__mensagens {
+    display: flex;
+    align-items: center;
+}
+
 .cabecalho__imagem {
     padding-right: 2em;
 }
@@ -67,8 +72,13 @@ body {
     display: flex;
     flex-direction: column;
     margin-bottom: 2rem;
-    margin-left: 38rem;
-    width: 340px;  
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
 }
 
 label {
@@ -85,7 +95,8 @@ input {
     border-radius: 6px;
     font-family: var(--fonte-principal);
     font-weight: 600;
-    height: 40px;   
+    height: 40px; 
+    width: 340px;  
 }
 
 input.mensagem {
@@ -124,19 +135,10 @@ input::placeholder {
     text-align: center;
 }
 
-@media screen and (min-width: 768px) {
-    form {
-       right: 13em;
+@media(max-width: 400px) {
+    input {
+       width: 285px;
     }
 }
 
-@media screen and (min-width: 1444px) {
-    .conteudo__texto {
-        margin-top: auto;
-    }
-    form {
-        margin-left: 22em;
-        top: 15em;
-    }
-}
 

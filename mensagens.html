@@ -14,11 +14,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https: //fonts.googleapis.com/css2? família= IBM+Plex+Sans:wght@500 &family= Montserrat:wght@300;400;700 & family= Open+Sans:wght@300;400;700 &família= Poppins:wght@400;600 & display=swap" rel="stylesheet">
 </head>
+
 <body class="bg-branco">
     <header class="cabecalho">
-       <a href="index.html"><img src="img/Casa.png" alt="Pagina inicial" class=" cabecalho__imagem"></a>
-       <a href="mensagens.html"><img src="img/Mensagens.png" alt="Caixa de Mensagens" class="cabecalho__imagem"></a>
-       <a href="Perfil.html"><img src="img2/Usuário.png" alt="Caixa de Mensagens" class="cabecalho__perfil"></a>
+        <nav class="cabecalho__navigation__mensagens">
+            <a href="index.html"><img src="img/Casa.png" alt="Pagina inicial" class=" cabecalho__imagem"></a>
+            <a href="mensagens.html"><img src="img/Mensagens.png" alt="Caixa de Mensagens" class="cabecalho__imagem"></a>
+            <a href="Perfil.html"><img src="img2/Usuário.png" alt="Caixa de Mensagens" class="cabecalho__perfil"></a>
+        </nav>
     </header>
 
     <main class="conteudo">
@@ -26,19 +29,21 @@
     </main>
 
     <form class="formulario--mensagem">
-        <label for="nome">Nome</label>
-        <input type="text" id="nome" required placeholder="Insira seu nome completo">
+        <section>
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" required placeholder="Insira seu nome completo">
 
-        <label for="telefone">Telefone</label>
-        <input type="text" id="telefone" required placeholder="Insira seu telefone e/ou whatsapp">
+            <label for="telefone">Telefone</label>
+            <input type="text" id="telefone" required placeholder="Insira seu telefone e/ou whatsapp">
 
-        <label for="nome do animal">Nome do animal</label>
-        <input type="text" id="nome do animal" required placeholder="Por qual animal você se interessou?">
+            <label for="nome do animal">Nome do animal</label>
+            <input type="text" id="nome do animal" required placeholder="Por qual animal você se interessou?">
 
-        <label for="escreva mensagem">Mensagem</label>
-        <input type="text" id="escreva mensagem" class="mensagem" required placeholder="Escreva sua mensagem.">
+            <label for="escreva mensagem">Mensagem</label>
+            <input type="text" id="escreva mensagem" class="mensagem" required placeholder="Escreva sua mensagem.">
 
-        <input type="submit" value="Enviar" class="enviar">
+            <input type="submit" value="Enviar" class="enviar">
+        </section>
     </form>
 
     <footer class="rodape">

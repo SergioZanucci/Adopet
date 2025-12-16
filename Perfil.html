@@ -18,34 +18,45 @@
 </head>
 <body class="bg-branco">
     <header class="cabecalho">
-       <a href="home.html"><img src="img/Casa.png" alt="Pagina inicial" class=" cabecalho__imagem"></a>
-       <a href="mensagens.html"><img src="img/Mensagens.png" alt="Caixa de Mensagens" class="cabecalho__imagem"></a>
-       <a href="Perfil.html"><img src="img2/Usuário.png" alt="Caixa de Mensagens" class="cabecalho__perfil"></a>  
+        <nav class="cabecalho__container">
+            <a href="home.html"><img src="img/Casa.png" alt="Pagina inicial" class=" cabecalho__imagem"></a>
+            <a href="mensagens.html"><img src="img/Mensagens.png" alt="Caixa de Mensagens" class="cabecalho__imagem"></a>
+            <a href="Perfil.html"><img src="img2/Usuário.png" alt="Caixa de Mensagens" class="cabecalho__perfil"></a> 
+        </nav>
     </header>
 
     <main class="conteudo">
-        <p class="conteudo__texto">Esse é o perfil que aparece para responsáveis ou ONGs que recebem sua mensagem.</p>
-        <h1 class="conteudo__titulo">Perfil</h1>
-        <h4 class="foto__texto">Foto</h4>
-        <img src="img2/Ellipse 2.png" alt="Foto de perfil">
-        <a class="editar__foto" href="#">Clique na foto para editar</a>
+        <section class="container__conteudo">
+            <section class="container__texto__titulo">
+                <p class="conteudo__texto">Esse é o perfil que aparece para responsáveis ou ONGs que recebem sua mensagem.</p>
+                <h1 class="conteudo__titulo">Perfil</h1>
+              
+                <img src="img2/Ellipse 2.png" alt="Foto de perfil">
+                <h4 class="foto__texto">Foto</h4>
+                <a class="editar__foto" href="#">Clique na foto para editar</a>
+            </section>
+        </section>
+
+        <section class="container__formulario">
+            <form class="formulario--perfil">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" required placeholder="Joana Magalhães">
+
+            <label for="telefone">Telefone</label>
+            <input type="text" id="telefone" required placeholder="Insira seu telefone e/ou whatsapp">
+
+            <label for="cidade">Cidade</label>
+            <input type="text" id="cidade" required placeholder="São Paulo">
+
+            <label for="sobre voce">Sobre</label>
+            <input type="text" id="sobre voce" class="mensagem" required placeholder="Escreva sobre você.">
+
+            <input type="submit" value="Salvar" class="salvar">
+        </form>
+        </section>
     </main>
 
-    <form class="formulario--perfil">
-        <label for="nome">Nome</label>
-        <input type="text" id="nome" required placeholder="Joana Magalhães">
-
-        <label for="telefone">Telefone</label>
-        <input type="text" id="telefone" required placeholder="Insira seu telefone e/ou whatsapp">
-
-        <label for="cidade">Cidade</label>
-        <input type="text" id="cidade" required placeholder="São Paulo">
-
-        <label for="sobre voce">Sobre</label>
-        <input type="text" id="sobre voce" class="mensagem" required placeholder="Escreva sobre você.">
-
-        <input type="submit" value="Salvar" class="salvar">
-    </form>
+    
     
     <footer class="rodape">
         <p class="rodape__texto">2022 - Desenvolvido por Alura</p>

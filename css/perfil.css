@@ -37,6 +37,11 @@ body {
     padding: 3em;   
 }
 
+.cabecalho__container {
+    display: flex;
+    align-items: center;
+}
+
 .cabecalho__imagem {
     padding-right: 2em;
 }
@@ -46,11 +51,25 @@ body {
 }
 
 .conteudo {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 70%;
     margin: 0 auto;
     flex: 1;
-    margin-top: 20px;
+}
+
+.container__conteudo {
+    display: flex;
+    flex-direction: column;
+}
+
+.container__texto__titulo {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
 }
 
 .conteudo__texto {
@@ -60,6 +79,7 @@ body {
     font-size: 16px;
     line-height: 24px;
     margin: 1em 0;
+    text-align: center;
 }
 
 .conteudo__titulo {
@@ -69,7 +89,6 @@ body {
     font-weight: 600;
     font-size: 26px;
     line-height: 48px;
-
 }
 
 .foto__texto {
@@ -78,33 +97,24 @@ body {
     font-size: 16px;
     line-height: 24px;
     color: var(--azul);
-    position: absolute;
-    text-align: center;
-}
-
-.conteudo img {
-    position: absolute;
-    width: 80px;
-    height: 80px;
-    left: 15%;
-    top: 356px;
 }
 
 .editar__foto {
-    position: absolute;
-    left: 12%;
-    margin-top: 115px;
     display: flex;
+    justify-content: center;
     color: var(--coral); 
+}
+
+.container__formulario {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
 }
 
 .formulario--perfil {
     display: flex;
     flex-direction: column;
-    position: absolute;
     width: 340px;
-    margin-left: 5%;
-    top: 465px;
 }
 
 label {
@@ -150,52 +160,16 @@ input::placeholder {
 }
 
 .rodape {
-    position: absolute;
-    top: 960px;
     width: 100%;
     text-align: center;
     background-color: var(--verde);
     color: var(--branco);
+    margin-top: 10px;
     padding: 3em;
-    top: 995px;
 }
 
-@media screen and (min-width: 768px) {
-    .foto__texto {
-        margin-left: 6em;
-    }
-
-    .conteudo img {
-        margin-left: 11em;
-        top: auto;
-    }
-
-    .editar__foto {
-        margin-left: 11em;
-    }
-
-    .formulario--perfil {
-        left: 13em;
-    }
+@media(max-width: 400px) {
+    input {
+        width: 285px;
+    } 
 }
-
-
-@media screen and (min-width: 1444px) {
-    .foto__texto {
-        margin-left: 21em;
-    }
-
-    .conteudo img {
-        margin-left: 32em;
-        top: auto;
-    }
-
-    .editar__foto {
-        margin-left: 32em;
-    }
-
-    .formulario--perfil {
-        left: 34em;
-    }
-}
-
